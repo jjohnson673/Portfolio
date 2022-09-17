@@ -1,30 +1,37 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  html {
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  justify-content: space-between
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul, ol {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100%;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+html {
     height: 100%;
   }
-  
-  body {
-    min-height: 100%;
-    line-height: 1;
-    font-family: sans-serif;
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    font-size: 100%;
-    justify-content: space-between
-  }
-  
-  input, select, option, optgroup, textarea, button,
-  pre, code {
-    font-size: 100%;
-    font-family: inherit;
-  }
-  
-  ol, ul {
-    list-style: none;
-  }
+
+
+
+  /*clean up later for fluid reset viewing*/

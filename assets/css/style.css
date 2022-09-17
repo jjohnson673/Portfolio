@@ -9,18 +9,26 @@
     flex-direction: column;
     min-height: 100vh;
     justify-content: flex-start;
+    background-color: #d7e2e2;
   }
   
   header {
-    padding: 40px;
-    text-align: center;
-    background: #13293d;
-    color: #fff;
+    padding: 0px;
+    text-align: left;
+    background: #49696c;
+    color: rgb(0, 0, 0);
+  }
+
+  header h1 {
+      font-family: fangsong;
+      font-size: 200%;
+      width: 25%;
+      
   }
   
   nav {
     display: flex;
-    background-color: #d8a47f;
+    background-color: #a47fd8;
   }
   
   nav a {
@@ -53,29 +61,56 @@
     margin-top: auto;
   }
   
-  .products {
+.first-application {
+  flex: 4;
+  background-color: #fff;
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+  
+  .portfolio {
+    position: relative;
     flex: 4;
-    background-color: #fff;
+    background-color: #d7e2e2;
     padding: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: flex-start;
+    max-width: 75vw;
+    left: 25vw;
+    border: solid;
+
   }
   
   /* TODO: Add properties to the cards to achieve the required look */
-  .card {
-    border-style: solid;
-    border-width: 1px;
-    padding: 10px;
-    margin: 20px;
+  .first-project {
+    position: relative;
+    padding: 0px;
+    margin: 0px;
     flex: 0 0 300px;
     border-radius: 50px;
-    transform: rotate(15deg);
-    box-shadow: 10px 10px #666666
+    border: solid 10px #3ededa;
+    min-width: 100%;
+
+  }
+
+  .study-guide,
+  .projects {
+    margin: 15px;
+    flex: 0 0 300px;
+    min-width:30.5vw;
+    max-height: 15vw;
+    border: solid 10px #3ededa;
+    
+
   }
   
-  .card header {
+  .text-block1, .text-block {
     padding: 20px;
     border-radius: 25px 25px 0px 0px;
   }
@@ -84,9 +119,28 @@
     text-align: center;
   }
   
-  .card img {
+  img .projects,
+  img .study-guide,
+  img .first-project {
     width: 100%;
    
+  }
+
+  /* Container holding the image and the text */
+.container {
+    position: relative;
+  }
+  
+  /* Bottom right text */
+  .text-block, .text-block1, .text-block2, .text-block3, .text-block4 {
+
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #3ededa;
+    color: #4d6d6c;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   
   @media screen and (max-width: 768px) {
