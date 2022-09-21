@@ -1,229 +1,58 @@
 * {
-    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
   }
-  
-body {
-  font-family: Arial;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
+
+  :root {
+    --bkgd: #8fbb95;
+    --contrast: #3f825a;
+    --dark: #044723;
+  }
+
+
+
+.header{
   min-height: 100vh;
-  justify-content: flex-start;
-  background-color: #8fbb95;
-}
-  
-.header {
-  padding: 0px;
-  color: #3f825a;
-  background-color: #044723;
-  max-width: 100vw;
-  max-height: 22vh;
-  display: inline-block;
+  width:100%;
+  background-image: linear-gradient ( rgba(31, 64, 199, 0.7),rgba(31, 64, 199, 0.7));
+  background-position: center;
+  background-size: cover;
+  position: relative;
 }
 
-.header h1 {
-  font-family: fangsong;
-  font-size: 200%;
-  width: 26vw;
-  display: inline-block;
-  background-color: #8fbb95;
-  color: #044723;
-  text-align: center;
-}
-  
 nav {
-  display: inline-block;
-  background-color: #044723;
+  display:flex;
+  padding: 2% 6%;
   justify-content: space-between;
-  width: 71vw;
-  text-align: end;
+  align-items:center;
 }
-  
-nav a {
-  color: #8fbb95;
-  padding: 10px 20px;
+
+.nav-links{
+  flex:1;
+  text-align: right;
+}
+.nav-links ul li a {
+  color: #fff;
+  font-size: 13px;
   text-decoration: none;
-  text-align: center;
-  border-bottom: 3px solid #8fbb95
 }
-  
-img {
-  height: 14vw;
+
+.nav-links ul li  {
+  list-style: none;
+  display:inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-links ul li::after  {
+  content:'';
   width: 100%;
-  object-fit: inherit;
-} 
-
-.quote {
-  height: 10vh;
-  width: 100%;
-  border: solid;
-  position: relative;
-  display: flex;
-  top: -10vh;
-  flex: 1;
-  border: solid salmon;
-}
-
-.quote h2 {
-  text-align: center;
-  font-size: 2.6vh;
-  position: absolute;
-  width: 34vw;
-  top: 0vh;
-  left: 61vw;
-  background-color: #8fbb95;
-  color: #042f12;
-  border: solid salmon;
-}
-
-
-.bio {
-  height: 24vh;
-  border: solid;
-  left: 14.8vw;
-  position: relative;
-  width: 83.99vw;
-  display: flex;
-  flex: 1;
-  border: solid #042f12
-} 
-
-.bio p{
-  text-align: justify;
-  font-size: 100%;
-  border: solid khaki;
-  margin-left: 23vh;
-}
-
-.bio img {
-  height: 23.5vh;
-  width: 14vw;
-  object-fit: scale-down;
-  position: relative;
-  display: flex;
-  left: -75vw;
-  padding: 20px 20px;
-  border: solid royalblue;
-}
-  
-main {
-  position: relative;
-  display: inline-flex;
-  flex-wrap: wrap;
-  flex-grow: 1;
-  flex-direction: column;
-  top: 14vh;
-  height:183vh;
-  border: solid firebrick;
-}
- 
- /* Container holding the project images and the text */
-.portfolio {
-  position: relative;
-  flex: 4;
-  background-color: #8fbb95;
-  padding: 50px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  width: 70%;
-  left: 27vw;
-  border: solid;
-  top: 102px;
-  display: inline-flex;
-  border: solid salmon;
-}
-
-.first-project {
-  position: relative;
-  padding: 0px;
-  margin: 0px;
-  flex: 0 0 300px;
-  border-radius: 50px;
-  border: solid 10px #042f12;
-  min-width: 100%;
-}
-
-.study-guide,
-.projects {
-  margin: 15px;
-  flex: 0 0 300px;
-  min-width:30.5vw;
-  max-height: 15vw;
-  border: solid 10px #042f12;
-  
-}
-
-.text-block, .text-block1, .text-block2, .text-block3, .text-block4, .text-block5 {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  background-color: #3f825a;
-  color: #042f12;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding: 20px;
-  border-radius: 25px 25px 0px 0px;
-  border: solid orange
-}
-
-.projects img,
-.study-guide img,
-.first-project img{
-  width: 100%;
-  object-fit: scale-down;
-  border: solid blue;
+  height: 2px;
+  background:#f44336;
+  display: block;
+  margin: auto;
 
 }
 
-aside {
-  position: relative;
-  background-color: #8fbb95;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  width: 15vw;
-  left: -84.3vw;
-  border: solid purple;
-  color: #042f12;
-  font-size: 26px;
-  height: 100vh;
-}
-  
-.about {
-position: relative
 
-}
-
-.myprojects {
-  position: relative
-
-  }
-
-.contactme {
-  position: relative
-
- }
-
-
-footer {
-  width: 100%;
-  bottom: 0;
-  padding: 20px;
-  text-align: center;
-  background: #8fbb95;
-  color: #042f12;
-  margin-top: auto;
-  border: solid yellow
-}
-
-
-
-  
-  @media screen and (min-width: 768px) and (max-width: 1560px) {
-    header, main, nav, footer, aside, .quote,{
-      flex-direction: column;
-    }
-  }
-  
