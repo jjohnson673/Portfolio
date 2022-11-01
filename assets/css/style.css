@@ -151,7 +151,7 @@ h3 {
 }
 
   .horiseon img,
-  .comingsoon img{
+  .comingsoon img {
     width: 100%;
  
   }
@@ -179,6 +179,7 @@ h3 {
     justify-content: space-evenly;
     align-items: flex-start;
   }
+
 
   .comingsoon {
     border-style: solid;
@@ -208,7 +209,7 @@ h3 {
     font-size: 40px;
   }
 
-  .comingsoon p{
+  .comingsoon p {
     text-align:center;
     font-size: 25px;
   }
